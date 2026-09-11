@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#653e0b","on-tertiary-fixed":"#00201c","on-surface":"#1b1c1a","on-primary":"#ffffff","surface-bright":"#fbf9f6","on-tertiary-fixed-variant":"#005048","inverse-surface":"#30312f","surface-variant":"#e4e2df","on-error-container":"#93000a","on-tertiary":"#ffffff","on-primary-fixed":"#061d31","background":"#fbf9f6","inverse-primary":"#b3c8e4","tertiary-fixed":"#71f8e4","outline-variant":"#c4c6cd","surface-container-high":"#eae8e5","surface-container-low":"#f5f3f0","error-container":"#ffdad6","tertiary-container":"#002823","surface-container":"#efeeeb","inverse-on-surface":"#f2f0ed","on-secondary-fixed":"#2b1700","surface-dim":"#dbdad7","primary-container":"#0e2439","tertiary":"#000f0d","tertiary-fixed-dim":"#4fdbc8","secondary-fixed":"#ffddbb","primary-fixed":"#d0e4ff","secondary":"#805521","outline":"#74777d","on-error":"#ffffff","secondary-container":"#fec485","surface-container-highest":"#e4e2df","on-secondary-container":"#794f1b","primary-fixed-dim":"#b3c8e4","on-secondary":"#ffffff","secondary-fixed-dim":"#f5bc7e","surface":"#fbf9f6","primary":"#000e1d","on-surface-variant":"#43474d","surface-container-lowest":"#ffffff","on-tertiary-container":"#009b8b","on-primary-fixed-variant":"#34485f","error":"#ba1a1a","on-background":"#1b1c1a","surface-tint":"#4c6078","on-primary-container":"#778ca5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-lg":"2rem","space-xl":"3.5rem","space-md":"1.25rem","gutter":"1.5rem","gutter-desktop":"2.5rem","margin-desktop":"4.5rem","margin":"1.25rem","margin-tablet":"2.5rem","space-xs":"0.375rem","space-sm":"0.75rem"},"fontFamily":{"label-caps":["Inter"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-hero":["Playfair Display"],"headline-lg":["Playfair Display"],"label-sm":["Inter"],"display-hero-mobile":["Playfair Display"],"headline-md":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.12em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"500"}],"headline-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"display-hero-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"500"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all duration-300"><div class="h-20 w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><a class="flex items-center gap-3 group" data-path="home" href="#"><img alt="Malu Surf Bali Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WjigTExqGJ3GuZU4RENC1H0ZA7tkoOkSa53tMM_3WeDAcTqqOgBDclROgsaRwzt9zTN75LfH2TjVShQlClFPufzw9Q2ufHV0muOX85Lzmg8xlhNjwhghQCRcy7Abkz_VovzOUH2Cp7DaAkwIGtDucTZnz_meMaDX37OAf6ds9pV9doeDEidxhALvQSw-9wp0ET8VvsIoIdnkoFTQ3rJSMpDn4kgWmbNqeXznTahgO40kClQw68SVKi12Q"/><div class="flex flex-col"><span class="font-headline-md text-headline-sm tracking-tight text-primary font-medium leading-none">Malu Surf</span><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary mt-1">Kuta Beach • Bali</span></div></a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="experiences" href="#">Experiences</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="board-rental" href="#">Board Rental</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="gallery" href="#">Gallery</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="surf-conditions" href="#">Surf Forecast</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="location" href="#">Location</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors py-2" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">WhatsApp</a><a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps uppercase px-5 py-3 rounded hover:bg-primary-container transition-colors tracking-widest shadow-sm" data-path="booking" href="#">Book Now</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-[92vh] flex items-center justify-center -mt-20 overflow-hidden bg-primary">
+<!-- Immersive Background Image -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="Malu Surf Bali surfer carving a turquoise Indian Ocean wave at Kuta Beach" class="w-full h-full object-cover object-center scale-105 transform motion-safe:transition-transform motion-safe:duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJnjFK4LbmINQK9atT1QNDGcgRWuXu0JM5QPTNqIROQkE7QC5yXef1Ee_6p7sFZllTu7UQ0I1lgm5drx5HNIeu4SctiK_bVsbcARSsSxwN3DCUpWdOuHl8bI5KrbhaKAI7Z8zBDfhiuD9Y9l1CWBXWj1CN5hxpuhhRUK1km-NbKSpChxV6DqEYdhDpapJ7vFCDluSHw0s09kLxvB6jxH76TnSwn3K8i8tXtVxZ4WO3SFtRV1n86CBF"/>
+<!-- Editorial Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/30"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/70 via-transparent to-primary/40"></div>
+</div>
+<!-- Hero Content Container -->
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-32 pb-20 flex flex-col items-center text-center">
+<!-- Location Badge Pill -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-bright/15 backdrop-blur-md text-surface-bright mb-8 shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright">Kuta Beach • Bali, Indonesia</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary max-w-4xl tracking-tight leading-[1.08] mb-6">
+        Learn to Surf <br class="hidden sm:inline"/><span class="italic font-normal text-secondary-fixed">in Bali</span>
+</h1>
+<!-- Supporting Editorial Copy -->
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto leading-relaxed mb-10 font-normal">
+        Surf lessons and board rentals right on the storied golden sands of Kuta Beach. Safe, patient Balinese ocean coaches, premium quiver, and unforgettable waves for all levels.
+      </p>
+<!-- Dual Call to Actions -->
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto justify-center mb-12">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-secondary text-on-secondary rounded-lg font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-200 shadow-md" href="https://wa.me/6281234567890?text=Hi%20Malu%20Surf%20Bali,%20I'd%20like%20to%20book%20a%20surf%20lesson!" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Book Your Surf Lesson</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-surface-bright/10 text-on-primary rounded-lg backdrop-blur-md hover:bg-surface-bright/20 font-label-caps text-label-caps uppercase tracking-widest transition-all duration-200" href="#experiences">
+<span>Explore Experiences</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+</div>
+<!-- Live Surf Telemetry Pill -->
+<div class="inline-flex flex-wrap items-center justify-center gap-3 md:gap-6 px-6 py-3 rounded-full bg-primary-container/85 backdrop-blur-md text-surface-variant text-body-sm shadow-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">tsunami</span>
+<span class="font-label-caps text-label-caps uppercase text-surface-bright">Today at Kuta Beach:</span>
+</div>
+<span class="font-medium text-surface-bright">3–4ft Gentle Rolling Waves</span>
+<span class="hidden md:inline text-outline-variant">•</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">thermostat</span>28°C Tropical Water</span>
+<span class="hidden md:inline text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-fixed-dim/20 text-tertiary-fixed font-label-caps text-label-caps uppercase">Beginner Ideal</span>
+</div>
+</div>
+</section>
+<!-- TRUST & REPUTATION BAR -->
+<section class="w-full bg-surface-container-low py-6 shadow-sm">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+<!-- Metric 1 -->
+<div class="flex items-center gap-3 justify-center md:justify-start">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">4.9</span>
+<div class="flex text-secondary text-[13px]">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">188 Verified Reviews</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="flex items-center gap-3 justify-center md:justify-start">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">Beachfront</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct sand setup, Gate 4</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="flex items-center gap-3 justify-center md:justify-start">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/40 flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">100% Safety</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Certified Lifeguard Coaches</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="flex items-center gap-3 justify-center md:justify-start">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary leading-none">Pay on Beach</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">No advance deposit needed</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCES & CLEAR PRICING -->
+<section class="w-full py-20 bg-surface" id="experiences">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Header with Currency Switcher -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 text-secondary font-label-caps text-label-caps uppercase tracking-widest">
+<span class="w-2 h-0.5 bg-secondary"></span>
+            Curated Ocean Sessions
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+            Choose Your Surf Experience
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Tailored instruction for first-timers, progressing riders, and free spirits. All top-tier gear, rashguards, zinc sunscreen, and coaching included.
+          </p>
+</div>
+<!-- Live Currency Estimator Toggle -->
+<div class="flex items-center gap-3 p-1.5 rounded-lg bg-surface-container self-start md:self-auto">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant px-2">Currency:</span>
+<div class="inline-flex rounded bg-surface p-0.5 shadow-sm" id="currency-switcher">
+<button class="curr-btn px-3 py-1 rounded text-label-caps font-label-caps bg-primary text-on-primary" data-curr="IDR" type="button">IDR</button>
+<button class="curr-btn px-3 py-1 rounded text-label-caps font-label-caps text-on-surface-variant hover:text-primary" data-curr="AUD" type="button">AUD</button>
+<button class="curr-btn px-3 py-1 rounded text-label-caps font-label-caps text-on-surface-variant hover:text-primary" data-curr="USD" type="button">USD</button>
+<button class="curr-btn px-3 py-1 rounded text-label-caps font-label-caps text-on-surface-variant hover:text-primary" data-curr="EUR" type="button">EUR</button>
+</div>
+</div>
+</div>
+<!-- 3 Editorial Experience Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter-desktop">
+<!-- CARD 1: GROUP SURF CLINIC -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative w-full h-72 overflow-hidden">
+<img alt="Malu Surf coach guiding beginner woman riding first whitewash wave at Kuta Beach" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-WGQx0Y1paoIe2E3gyynw_hYVWNUNHEhhT4gLkooKBdRgzJl9RoXxgLNoELZG0M-BumPvUcaJeRZ5pVyBiSwp5e7LiFmfMahldv4BbuermZEY0JKh3KgvowhyxOeGUnmUr7DgbjTg0Uex1uPuLX_np_0BPYO-z7l_HWAxrEWogdYaUM6kTI9iPDygU25KadFyaQPHXGUtzUVrLKwQ5d-TXu2EovJixDlaVcz7iX4C1m4pklzy0zTI"/>
+<div class="absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-caps text-label-caps uppercase tracking-wider shadow-sm">
+              Most Popular for Beginners
+            </div>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-md text-surface-bright px-3 py-1 rounded text-body-sm font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 2 Hours
+            </div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold tracking-wider">Small Group Clinic</span>
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span> Max 1:3 Ratio
+                </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Beginner Group Lesson</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Master ocean awareness, board balance, paddling form, and nail your first popup on forgiving soft-sand waves.
+              </p>
+<ul class="space-y-2 pt-2 text-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Soft-top learner board &amp; safety leash</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Protective UV rashguard &amp; mineral zinc</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>20 min sand coaching + 100 min water session</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 bg-surface-container-lowest -mx-8 -mb-8 p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Price per person</span>
+<div class="font-headline-md text-headline-md text-primary font-bold flex items-baseline gap-1.5">
+<span class="price-val" data-base="150000">Rp 150,000</span>
+<span class="price-approx text-body-sm font-normal text-on-surface-variant">(~AUD $15 / $10 USD)</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-primary text-on-primary hover:bg-primary-container rounded font-label-caps text-label-caps uppercase tracking-wider transition-colors" href="https://wa.me/6281234567890?text=Hi%20Malu%20Surf,%20I'd%20like%20to%20join%20a%20Group%20Surf%20Lesson!" rel="noopener noreferrer" target="_blank">
+<span>Book via WhatsApp</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 2: PRIVATE 1-ON-1 COACHING -->
+<div class="group flex flex-col bg-surface-container-high rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative">
+<div class="absolute -top-3 -right-3 w-16 h-16 bg-secondary/15 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative w-full h-72 overflow-hidden">
+<img alt="Solo surfer maneuvering clean breaking wave face during private coaching" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJnjFK4LbmINQK9atT1QNDGcgRWuXu0JM5QPTNqIROQkE7QC5yXef1Ee_6p7sFZllTu7UQ0I1lgm5drx5HNIeu4SctiK_bVsbcARSsSxwN3DCUpWdOuHl8bI5KrbhaKAI7Z8zBDfhiuD9Y9l1CWBXWj1CN5hxpuhhRUK1km-NbKSpChxV6DqEYdhDpapJ7vFCDluSHw0s09kLxvB6jxH76TnSwn3K8i8tXtVxZ4WO3SFtRV1n86CBF"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-caps text-label-caps uppercase tracking-wider shadow-sm">
+              Fastest Progression
+            </div>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-md text-surface-bright px-3 py-1 rounded text-body-sm font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 2 Hours
+            </div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold tracking-wider">Private Mentorship</span>
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span> 1 Coach : 1 Guest
+                </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Private Surf Coaching</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                100% dedicated instructor attention. Tailored precisely to your fitness, speed, wave selection, cutbacks, and green wave positioning.
+              </p>
+<ul class="space-y-2 pt-2 text-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Custom board matching your exact skill profile</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Real-time wave reading &amp; paddle positioning</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Post-session debrief with technique improvement cues</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 bg-surface-container-lowest -mx-8 -mb-8 p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Price per person</span>
+<div class="font-headline-md text-headline-md text-primary font-bold flex items-baseline gap-1.5">
+<span class="price-val" data-base="250000">Rp 250,000</span>
+<span class="price-approx text-body-sm font-normal text-on-surface-variant">(~AUD $25 / $16 USD)</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container rounded font-label-caps text-label-caps uppercase tracking-wider transition-colors shadow-sm" href="https://wa.me/6281234567890?text=Hi%20Malu%20Surf,%20I'd%20like%20to%20book%20a%20Private%20Surf%20Session!" rel="noopener noreferrer" target="_blank">
+<span>Book via WhatsApp</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 3: PREMIUM BOARD RENTAL -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative w-full h-72 overflow-hidden">
+<img alt="Array of surfboards lined up on beach rack under palm trees at Malu Surf Bali" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhqGt9pIXpHVRfkZRVkG37cTZsd1Qh1Kv3DtKJIukl80vxwOZhhBI_XhbP77YFufepQ5UsnwOpflDXeqeMRCQ1VnUVLuq0-hxS6FmAEnUTT1fT9RQ46u8FT76Zw2JZwE8vlq9chhC1pG-qxzM55qc5eoX-w7bGkyyoh40OGe7KtuZ6zVTfp5w8PWgYgjJMu_CQjikUY5s1tilsx5g4OWn54QwM-vQADBQYr_7iV7HiJkudZVjQLHvS"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full font-label-caps text-label-caps uppercase tracking-wider shadow-sm">
+              Top Quality Quiver
+            </div>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-md text-surface-bright px-3 py-1 rounded text-body-sm font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span> Hourly &amp; Daily
+            </div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold tracking-wider">Independent Riders</span>
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">surfing</span> 50+ Boards
+                </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Premium Board Rental</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Direct beachside surfboard locker. Swap boards anytime as tide conditions change from morning high to evening glass-off.
+              </p>
+<ul class="space-y-2 pt-2 text-body-sm text-on-surface">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Soft-tops (7'0 to 9'0), funboards &amp; mini-malibus</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Epoxy performance shortboards &amp; longboards</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Includes tropical surf wax &amp; secure board leash</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 bg-surface-container-lowest -mx-8 -mb-8 p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Rate per hour</span>
+<div class="font-headline-md text-headline-md text-primary font-bold flex items-baseline gap-1.5">
+<span class="price-val" data-base="50000">Rp 50,000</span>
+<span class="price-approx text-body-sm font-normal text-on-surface-variant">(~AUD $5 / $3.50 USD)</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-surface-container-highest text-primary hover:bg-primary hover:text-on-primary rounded font-label-caps text-label-caps uppercase tracking-wider transition-colors" href="https://wa.me/6281234567890?text=Hi%20Malu%20Surf,%20I'd%20like%20to%20rent%20a%20surfboard%20today!" rel="noopener noreferrer" target="_blank">
+<span>Reserve a Board</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY MALU SURF BALI (4-COLUMN EDITORIAL FEATURE) -->
+<section class="w-full py-20 bg-surface-container-low">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Tagline & Header -->
+<div class="max-w-2xl mb-16 space-y-3">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest block">The Malu Standard</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+          Your Bali Surf Journey Starts Here
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          We combine local coastal heritage with international safety protocols so you feel supported, respected, and excited at every wave set.
+        </p>
+</div>
+<!-- Feature Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Feature 1 -->
+<div class="p-8 rounded-xl bg-surface flex flex-col justify-between shadow-sm space-y-6">
+<div class="space-y-4">
+<span class="font-display-hero text-headline-lg text-outline-variant/60 font-serif leading-none block">01</span>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">waves</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Prime Kuta Beach Break</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Sandy-bottom break with no sharp coral reef. Kuta is widely renowned as the safest, most forgiving arena in Bali to stand up and ride green water.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span>Sandy Bottom Security</span>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="p-8 rounded-xl bg-surface flex flex-col justify-between shadow-sm space-y-6">
+<div class="space-y-4">
+<span class="font-display-hero text-headline-lg text-outline-variant/60 font-serif leading-none block">02</span>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Patient Balinese Coaches</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Warm hospitality, endless patience, and genuine care. Our local ocean experts grew up on these waves and treat every guest like family.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span>Encouraging • Zero Pressure</span>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="p-8 rounded-xl bg-surface flex flex-col justify-between shadow-sm space-y-6">
+<div class="space-y-4">
+<span class="font-display-hero text-headline-lg text-outline-variant/60 font-serif leading-none block">03</span>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">diversity_1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Strict Small-Group Ratios</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Never get lost in a crowd. We cap all beginner sessions at 3 students maximum per coach, ensuring close supervision and rapid wave counts.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span>High Wave Count</span>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="p-8 rounded-xl bg-surface flex flex-col justify-between shadow-sm space-y-6">
+<div class="space-y-4">
+<span class="font-display-hero text-headline-lg text-outline-variant/60 font-serif leading-none block">04</span>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">chat_bubble</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Instant WhatsApp Booking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              No complicated booking engines, credit card friction, or hidden fees. Chat with us directly, pick the best tide time, and pay when you hit the beach.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span>Zero Upfront Deposit</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EDITORIAL GALLERY ("Moments on the Water") -->
+<section class="w-full py-20 bg-surface">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest block">Visual Chronicles</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+            Moments Along Kuta's Swell
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Pure saltwater memories captured under Bali’s legendary tropical sunlight and fiery evening skies.
+        </p>
+</div>
+<!-- Asymmetric Editorial Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+<!-- Big Feature Tile: Sunset Walker -->
+<div class="group relative md:col-span-7 h-[420px] md:h-[540px] rounded-xl overflow-hidden shadow-sm">
+<img alt="Silhouetted surfer walking along the glossy wet sand of Kuta Beach at golden sunset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKTIMCH6WUNiCrDTb00iTLpGwbzuLraFJF6hTJdWyt7LU9a4C1uU9YzngQexhjKiuoUvfOOVJgWKA76qZwI8k_jeV8zipRa85B3ESaqsdNB6eexttLfgID8wGM65n1gX18ONDZDdytqAyf_5PrU6Rvlzw1DifwCfmPcxYkPn94UzKQXmHixBa20-CaCS53zoyTOxOmN976qsX-N39YI2ByxpQHXt_MDZEQ4Txq_c55G5BNX1wy3knv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed block mb-1">Golden Hour Glass-Off</span>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright font-serif">Kuta Beach Tide Line at Dusk</h4>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest px-3 py-1 rounded bg-surface-bright/20 backdrop-blur-md text-surface-bright">Bali • 18:15</span>
+</div>
+</div>
+<!-- Right Split Grid (2 Stacked Tiles) -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<!-- Top Right: Beginner Stoked -->
+<div class="group relative h-[246px] rounded-xl overflow-hidden shadow-sm">
+<img alt="Smiling beginner surfer celebrating with instructor in the ocean foam at Kuta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-WGQx0Y1paoIe2E3gyynw_hYVWNUNHEhhT4gLkooKBdRgzJl9RoXxgLNoELZG0M-BumPvUcaJeRZ5pVyBiSwp5e7LiFmfMahldv4BbuermZEY0JKh3KgvowhyxOeGUnmUr7DgbjTg0Uex1uPuLX_np_0BPYO-z7l_HWAxrEWogdYaUM6kTI9iPDygU25KadFyaQPHXGUtzUVrLKwQ5d-TXu2EovJixDlaVcz7iX4C1m4pklzy0zTI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed block text-[10px]">Pure Stoke</span>
+<h4 class="font-headline-sm text-[17px] text-surface-bright">First Green Wave Joy</h4>
+</div>
+<span class="material-symbols-outlined text-surface-bright/80 text-[20px]">verified</span>
+</div>
+</div>
+<!-- Bottom Right: Surf Rack -->
+<div class="group relative h-[268px] rounded-xl overflow-hidden shadow-sm">
+<img alt="Handcrafted wooden surfboard racks lined up under palm trees on the beach sand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhqGt9pIXpHVRfkZRVkG37cTZsd1Qh1Kv3DtKJIukl80vxwOZhhBI_XhbP77YFufepQ5UsnwOpflDXeqeMRCQ1VnUVLuq0-hxS6FmAEnUTT1fT9RQ46u8FT76Zw2JZwE8vlq9chhC1pG-qxzM55qc5eoX-w7bGkyyoh40OGe7KtuZ6zVTfp5w8PWgYgjJMu_CQjikUY5s1tilsx5g4OWn54QwM-vQADBQYr_7iV7HiJkudZVjQLHvS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed block text-[10px]">Beachfront Setup</span>
+<h4 class="font-headline-sm text-[17px] text-surface-bright">The Daily Quiver Locker</h4>
+</div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest px-2.5 py-1 rounded bg-surface-bright/20 backdrop-blur-md text-surface-bright text-[10px]">Gate 4</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3-STEP SEAMLESS BOOKING FLOW -->
+<section class="w-full py-20 bg-surface-container-low">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Effortless Reservation</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+          Ready to Ride?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Reserving your surf coach or rental takes less than 60 seconds with zero upfront deposit needed.
+        </p>
+</div>
+<!-- 3 Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop relative mb-16">
+<!-- Step 1 -->
+<div class="bg-surface rounded-xl p-8 shadow-sm flex flex-col items-center text-center space-y-4 relative">
+<div class="w-14 h-14 rounded-full bg-secondary-container/40 text-on-secondary-container flex items-center justify-center font-headline-md text-headline-sm font-bold">
+            1
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Choose Your Session</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Pick between beginner small group, private 1-on-1 coaching, or custom board hire. Let us know your preferred morning or sunset time.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface rounded-xl p-8 shadow-sm flex flex-col items-center text-center space-y-4 relative">
+<div class="w-14 h-14 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-headline-md text-headline-sm font-bold">
+            2
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">WhatsApp Us</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Send us a quick chat with your dates and group size. We'll cross-reference the live tide chart to lock in the cleanest wave window for your skill level.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface rounded-xl p-8 shadow-sm flex flex-col items-center text-center space-y-4 relative">
+<div class="w-14 h-14 rounded-full bg-tertiary-fixed/50 text-on-tertiary-fixed flex items-center justify-center font-headline-md text-headline-sm font-bold">
+            3
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Paddle Out &amp; Pay Later</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Meet our coaches at our beachfront shade post along Kuta Beach. We hand you fresh rashguards, gear, zinc sunscreen, and hit the water!
+          </p>
+</div>
+</div>
+<!-- High-Conversion WhatsApp Banner Card -->
+<div class="bg-gradient-to-r from-primary-container via-primary to-primary-container text-on-primary rounded-xl p-8 md:p-12 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="space-y-3 text-center lg:text-left max-w-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-surface-bright animate-pulse"></span> Available Now • Replies within 5 Mins
+          </div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-md font-serif text-surface-bright tracking-tight">
+            Chat Directly with Malu Ocean Desk
+          </h3>
+<p class="font-body-md text-body-md text-surface-variant">
+            Have questions regarding tide schedules, children's lessons, or board volume choices? Our team is on the beach and ready to help.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+<div class="flex flex-col items-center sm:items-start text-surface-bright">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed">WhatsApp Hotline</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-wider">+62 812 3456 7890</span>
+</div>
+<a class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container rounded font-label-caps text-label-caps uppercase tracking-widest transition-all shadow-md" href="https://wa.me/6281234567890?text=Hi%20Malu%20Surf%20Bali,%20I'd%20like%20to%20check%20surf%20conditions%20and%20book%20a%20lesson." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Message on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- LOCATION & HOW TO FIND US -->
+<section class="w-full py-20 bg-surface">
+<div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Details Column -->
+<div class="lg:col-span-5 space-y-8">
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest block">Direct Beachfront Access</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+              Find Us on Kuta Beach
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              We are situated directly on the white sand along Jalan Pantai Kuta, comfortably positioned between gentle breaking waves and shade-providing tropical palm groves.
+            </p>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">location_on</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-primary font-semibold">Exact Location</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">signpost</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-primary font-semibold">Easy Landmarks</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Right on the sand, 200m north of Hard Rock Hotel Bali, opposite Kuta Beach Gate 4. Look for the handcrafted wooden Malu Surf sign and quiver rack.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">schedule</span>
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-primary font-semibold">Opening Hours</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Open Daily: 06:30 AM – 06:30 PM (Lessons arranged according to high &amp; mid tide shifts).
+                </p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-3.5 bg-primary text-on-primary rounded font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container transition-colors" href="https://maps.google.com/?q=Kuta+Beach+Bali" rel="noopener noreferrer" target="_blank">
+<span>Open Google Maps</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 bg-surface-container text-primary rounded font-label-caps text-label-caps uppercase tracking-wider hover:bg-surface-variant transition-colors" href="https://wa.me/6281234567890?text=Hi%20Malu%20Surf,%20I'm%20near%20Kuta%20Beach,%20where%20is%20your%20stand?" rel="noopener noreferrer" target="_blank">
+<span>Ask for Pin Drop</span>
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+</a>
+</div>
+</div>
+<!-- Interactive Visual Location Card -->
+<div class="lg:col-span-7">
+<div class="relative w-full h-[460px] rounded-xl overflow-hidden shadow-md">
+<!-- Map static display placeholder -->
+<div class="w-full h-full bg-cover bg-center" data-location="Jl. Pantai Kuta, Bali, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiLRQsqPdmEqNXGEd6GCnBg7ToLlPmsn62iH9MmHq4uQQymHrNcJ5qzDq_zdGtl3V5P-r0TVrFkmBNKRQgtrt0f0c63OijXZmtzbxegLBqQO9vmAnHIW-addFEcFDmmcriNtfH89ZhLu6i54n2uZb6WcTZBULUBvq23XbMvgyH0NVcLHCJgyNz7V91aHSKPb6n0IxiKxpyj-7ywx3vr7aB9IG9jbkTI7XKpZkbcreoRf-ljddLPHLa')"></div>
+<!-- Map Overlay Card -->
+<div class="absolute bottom-6 left-6 right-6 p-6 rounded-lg bg-surface/95 backdrop-blur-md shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-[16px] text-primary font-bold">Malu Surf Beach Station</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kuta Beach Sand • Gate 4 • Direct Ocean Access</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-secondary-fixed/50 text-on-secondary-fixed font-label-caps text-label-caps uppercase">
+<span class="material-symbols-outlined text-[16px]">surfing</span> Free Shower &amp; Locker
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL INSPIRATIONAL CTA -->
+<section class="relative w-full py-28 overflow-hidden bg-primary">
+<!-- Sunset Silhouette Photo Background -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="Golden sunset surf reflection along Kuta beach shoreline" class="w-full h-full object-cover object-center opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKTIMCH6WUNiCrDTb00iTLpGwbzuLraFJF6hTJdWyt7LU9a4C1uU9YzngQexhjKiuoUvfOOVJgWKA76qZwI8k_jeV8zipRa85B3ESaqsdNB6eexttLfgID8wGM65n1gX18ONDZDdytqAyf_5PrU6Rvlzw1DifwCfmPcxYkPn94UzKQXmHixBa20-CaCS53zoyTOxOmN976qsX-N39YI2ByxpQHXt_MDZEQ4Txq_c55G5BNX1wy3knv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/70 to-primary/40"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop text-center flex flex-col items-center">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed mb-4">Start Your Story in the Waves</span>
+<h2 class="font-display-hero text-display-hero-mobile md:text-display-hero text-surface-bright max-w-3xl leading-tight mb-6">
+        Your First Wave in Bali Awaits
+      </h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-xl mb-10 leading-relaxed">
+        Join Malu Surf Bali at Kuta Beach today. Safe breaks, warm tropical water, patient local coaches, and pure Bali ocean stoke.
+      </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto justify-center">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container rounded font-label-caps text-label-caps uppercase tracking-widest transition-all shadow-xl" href="https://wa.me/6281234567890?text=Hi%20Malu%20Surf,%20I'm%20ready%20to%20book%20my%20lesson!" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Book Your Surf Lesson via WhatsApp</span>
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant mt-6">No credit card required • Pay cash or card at the beach</p>
+</div>
+</section>
+<!-- Interactive Client-side Logic for Currency Toggle -->
+<script>
+    (function() {
+      const rates = {
+        IDR: { rate: 1, symbol: 'Rp ', approxFormat: '(Local Rupiah)' },
+        AUD: { rate: 0.00010, symbol: '$', approxFormat: 'AUD' },
+        USD: { rate: 0.000064, symbol: '$', approxFormat: 'USD' },
+        EUR: { rate: 0.000059, symbol: '€', approxFormat: 'EUR' }
+      };
+
+      const buttons = document.querySelectorAll('.curr-btn');
+      const priceEls = document.querySelectorAll('.price-val');
+      const approxEls = document.querySelectorAll('.price-approx');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const curr = this.getAttribute('data-curr');
+          
+          buttons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('text-on-surface-variant');
+          });
+          this.classList.add('bg-primary', 'text-on-primary');
+          this.classList.remove('text-on-surface-variant');
+
+          priceEls.forEach((el, index) => {
+            const baseIDR = parseInt(el.getAttribute('data-base'), 10);
+            if (curr === 'IDR') {
+              el.textContent = 'Rp ' + baseIDR.toLocaleString('id-ID');
+              if (approxEls[index]) {
+                if (baseIDR === 150000) approxEls[index].textContent = '(~AUD $15 / $10 USD)';
+                if (baseIDR === 250000) approxEls[index].textContent = '(~AUD $25 / $16 USD)';
+                if (baseIDR === 50000) approxEls[index].textContent = '(~AUD $5 / $3.50 USD)';
+              }
+            } else {
+              const converted = Math.round(baseIDR * rates[curr].rate);
+              el.textContent = rates[curr].symbol + converted;
+              if (approxEls[index]) {
+                approxEls[index].textContent = 'approx. ' + curr + ' (IDR ' + (baseIDR / 1000) + 'k)';
+              }
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><aside class="fixed bottom-6 right-6 z-40 md:bottom-8 md:right-8"><a class="flex items-center gap-3 bg-primary-container text-on-primary px-5 py-3.5 rounded-full shadow-[0_16px_36px_-10px_rgba(14,36,57,0.25)] hover:bg-primary transition-all transform hover:-translate-y-0.5" href="https://wa.me/6281234567890?text=Hi%20Malu%20Surf%20Bali,%20I'd%20like%20to%20inquire%20about%20surf%20lessons%20and%20board%20rentals." rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] text-tertiary-fixed">chat</span><span class="font-label-caps text-label-caps uppercase tracking-wider text-on-primary">Instant Surf Booking</span></a></aside><footer class="w-full bg-surface-container-low text-on-surface"><div class="w-full max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop"><div class="lg:col-span-5 flex flex-col justify-between space-y-6"><div class="space-y-4"><div class="flex items-center gap-3"><img alt="Malu Surf Bali Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WjigTExqGJ3GuZU4RENC1H0ZA7tkoOkSa53tMM_3WeDAcTqqOgBDclROgsaRwzt9zTN75LfH2TjVShQlClFPufzw9Q2ufHV0muOX85Lzmg8xlhNjwhghQCRcy7Abkz_VovzOUH2Cp7DaAkwIGtDucTZnz_meMaDX37OAf6ds9pV9doeDEidxhALvQSw-9wp0ET8VvsIoIdnkoFTQ3rJSMpDn4kgWmbNqeXznTahgO40kClQw68SVKi12Q"/><span class="font-headline-md text-headline-sm tracking-tight text-primary font-medium">Malu Surf Bali</span></div><p class="text-on-surface-variant font-body-md text-body-md max-w-md leading-relaxed">Artisanal ocean coaching and curated board rental situated on the storied sands of Kuta Beach. Guided by seasoned Balinese ocean masters with pure respect for swell dynamics, safety, and personal technique.</p></div><div class="pt-2"><span class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider"><span class="w-2 h-2 rounded-full bg-secondary"></span>Kuta Beach Tide Post • Daily 06:00 – 18:30</span></div></div><div class="lg:col-span-3 space-y-4"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Beachfront Sanctuary</h4><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Jl. Pantai Kuta, Legian,<br/>Kec. Kuta, Kabupaten Badung,<br/>Bali 80361, Indonesia</p><div class="pt-2 space-y-2"><a class="group inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-wider text-primary hover:text-secondary transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank"><span>Open Google Maps</span><span class="material-symbols-outlined text-[16px] transform group-hover:translate-x-0.5 transition-transform">north_east</span></a></div></div><div class="lg:col-span-2 space-y-4"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Ocean Desk</h4><ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">+62 812 3456 7890</a></li><li><a class="hover:text-primary transition-colors" href="mailto:hello@malusurfbali.com">aloha@malusurfbali.com</a></li><li><a class="group inline-flex items-center gap-1.5 hover:text-primary transition-colors font-label-caps text-label-caps uppercase tracking-wider text-secondary" href="https://instagram.com/malusurfbali" rel="noopener noreferrer" target="_blank"><span>@malusurfbali</span><span class="material-symbols-outlined text-[14px]">arrow_outward</span></a></li></ul></div><div class="lg:col-span-2 space-y-4"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Experiences</h4><nav class="flex flex-col space-y-2 font-body-md text-body-md text-on-surface-variant" data-active-classes="text-primary font-medium"><a class="hover:text-primary transition-colors" data-path="experiences" href="#">Private Coaching</a><a class="hover:text-primary transition-colors" data-path="experiences" href="#">Beginner Surf Clinic</a><a class="hover:text-primary transition-colors" data-path="board-rental" href="#">Quiver &amp; Longboards</a><a class="hover:text-primary transition-colors" data-path="surf-conditions" href="#">Tide &amp; Swell Report</a></nav></div></div><div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><div class="font-label-caps text-label-caps uppercase text-on-surface-variant">© 2025 Malu Surf Bali. All rights reserved. Handcrafted along the Indian Ocean swell line.</div><div class="flex items-center gap-6 font-label-caps text-label-caps uppercase"><a class="hover:text-primary transition-colors" href="#">Safety Protocol</a><a class="hover:text-primary transition-colors" href="#">Surf Terms</a><a class="hover:text-primary transition-colors" href="#">Privacy</a></div></div></div></footer></body></html>

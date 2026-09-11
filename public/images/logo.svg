@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 60" fill="none">
+  <g transform="translate(10, 10)">
+    <path d="M4 32C10 20 20 12 30 18C40 24 38 10 48 4C42 16 32 24 22 18C12 12 10 26 4 32Z" fill="#0E2439"/>
+    <circle cx="28" cy="8" r="3" fill="#D97706"/>
+  </g>
+  <text x="75" y="31" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="700" letter-spacing="0.18em" fill="#0E2439">MALU SURF</text>
+  <text x="75" y="45" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600" letter-spacing="0.32em" fill="#64748B">KUTA BEACH · BALI</text>
+</svg>

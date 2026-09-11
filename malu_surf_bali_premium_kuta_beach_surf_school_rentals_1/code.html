@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#FBF9F6",
+            "surface-low": "#F7F4EE",
+            "surface-card": "#FFFFFF",
+            "surface-dim": "#EAE3D2",
+            "primary": "#0E2439",
+            "primary-dark": "#081624",
+            "secondary": "#805521",
+            "secondary-gold": "#C69249",
+            "secondary-container": "#F5E7D3",
+            "on-surface": "#1B1C1A",
+            "on-surface-variant": "#505459",
+            "outline-light": "#E2DED5",
+            "sand": "#F3EFE6"
+          },
+          fontFamily: {
+            "serif": ["Playfair Display", "serif"],
+            "sans": ["Plus Jakarta Sans", "sans-serif"],
+            "inter": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface antialiased font-sans selection:bg-secondary-container selection:text-primary">
+<!-- TOP HEADER / NAV -->
+<header class="fixed top-0 left-0 w-full z-50 bg-primary-dark/85 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+<div class="h-20 w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between">
+<!-- Brand Name -->
+<a class="flex items-center gap-3 group" href="#">
+<span class="font-serif text-xl md:text-2xl tracking-[0.22em] text-white uppercase font-medium">MALU SURF BALI</span>
+</a>
+<!-- Minimal Navigation -->
+<nav class="hidden md:flex items-center gap-8 lg:gap-10">
+<a class="text-xs uppercase tracking-[0.16em] text-white/80 hover:text-white transition-colors" href="#experiences">Experiences</a>
+<a class="text-xs uppercase tracking-[0.16em] text-white/80 hover:text-white transition-colors" href="#about">About</a>
+<a class="text-xs uppercase tracking-[0.16em] text-white/80 hover:text-white transition-colors" href="#gallery">Gallery</a>
+<a class="text-xs uppercase tracking-[0.16em] text-white/80 hover:text-white transition-colors" href="#location">Location</a>
+</nav>
+<!-- Right CTAs -->
+<div class="flex items-center gap-5">
+<a class="hidden lg:inline-flex items-center gap-2 text-xs tracking-wider text-white/80 hover:text-white transition-colors" href="https://wa.me/6281237903715" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[17px] text-emerald-400">chat</span>
+<span>+62 812-3790-3715</span>
+</a>
+<a class="inline-flex items-center justify-center bg-white text-primary text-xs uppercase font-medium tracking-[0.18em] px-5 py-2.5 rounded hover:bg-sand transition-all duration-200" href="#experiences">
+          BOOK NOW
+        </a>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- FULL-SCREEN CINEMATIC HERO -->
+<section class="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-primary">
+<div class="absolute inset-0 w-full h-full">
+<img alt="Surfer riding wave at Kuta Beach, Bali" class="w-full h-full object-cover object-center scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1W-XOpwL_vBGvLv0cAV8YmgYBlLSzKaaeMLl8DMffmusnI9bElDe_tHO6P09upXNc-VBgCVVY19qV5m2OgezSmXqHvi7OPa4ws9ZOKcWWYyPcQ4lxRELC-ix7u5csMAANV9uklM4w_FMuHau0Z6U0j0t5TzTZ66Q2CH8vhE701YI0mySCBxJy1bgo2tChhhEUS-8slHIfhhK7lJH6XmuzCXQ1WwELWEuUz_uVocEi_CfBN40IZmWNvifgs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary/50 to-primary-dark/60"></div>
+<div class="absolute inset-0 bg-black/25"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 pt-32 pb-24 flex flex-col items-center text-center">
+<!-- Location Tag -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-white mb-8">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-300"></span>
+<span class="font-inter text-xs tracking-[0.2em] uppercase font-medium text-white/90">Kuta Beach · Bali</span>
+</div>
+<!-- Editorial Headline -->
+<h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl text-white max-w-4xl tracking-tight leading-[1.08] mb-6">
+          Learn to Surf <br/><span class="italic font-normal text-amber-100">in Bali</span>
+</h1>
+<!-- Supporting Text -->
+<p class="font-sans text-base md:text-lg text-white/85 max-w-xl mx-auto leading-relaxed mb-10 font-normal">
+          Surf lessons and board rentals at Kuta Beach.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto justify-center">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-primary rounded text-xs uppercase font-semibold tracking-[0.16em] hover:bg-sand transition-all duration-200 shadow-lg" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf%20Bali,%20I'd%20like%20to%20book%20a%20surf%20lesson!" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Book Your Surf Lesson</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white rounded border border-white/25 backdrop-blur-md hover:bg-white/20 text-xs uppercase font-medium tracking-[0.16em] transition-all duration-200" href="#experiences">
+<span>Explore Experiences</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- TRUST BAR -->
+<section class="w-full bg-surface-low border-b border-outline-light py-5">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 flex flex-wrap items-center justify-center md:justify-between gap-6 text-sm">
+<div class="flex items-center gap-3">
+<div class="flex items-center text-amber-600 gap-0.5">
+<span class="font-serif font-semibold text-primary text-base mr-1">4.9</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-on-surface-variant text-xs md:text-sm font-medium">188 Google Reviews</span>
+</div>
+<div class="hidden sm:inline-block w-px h-4 bg-outline-light"></div>
+<div class="flex items-center gap-2 text-on-surface-variant text-xs md:text-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+<span>Kuta Beach, Bali</span>
+</div>
+<div class="hidden md:inline-block w-px h-4 bg-outline-light"></div>
+<div class="text-on-surface-variant text-xs md:text-sm font-light tracking-wide italic">
+          "Trusted by travelers visiting Bali."
+        </div>
+</div>
+</section>
+<!-- EXPERIENCES SECTION -->
+<section class="w-full py-24 bg-surface" id="experiences">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div class="space-y-3">
+<span class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold block">Curated Sessions</span>
+<h2 class="font-serif text-3xl md:text-5xl text-primary tracking-tight">Choose Your Surf Experience</h2>
+</div>
+<!-- Currency Switcher Toggle -->
+<div class="flex items-center gap-2 p-1 rounded bg-surface-low border border-outline-light self-start md:self-auto">
+<span class="font-inter text-[11px] uppercase tracking-wider text-on-surface-variant px-2">Currency:</span>
+<div class="inline-flex rounded p-0.5" id="currency-switcher">
+<button class="curr-btn px-2.5 py-1 rounded text-xs font-medium bg-primary text-white" data-curr="IDR" type="button">IDR</button>
+<button class="curr-btn px-2.5 py-1 rounded text-xs font-medium text-on-surface-variant hover:text-primary" data-curr="AUD" type="button">AUD</button>
+<button class="curr-btn px-2.5 py-1 rounded text-xs font-medium text-on-surface-variant hover:text-primary" data-curr="USD" type="button">USD</button>
+<button class="curr-btn px-2.5 py-1 rounded text-xs font-medium text-on-surface-variant hover:text-primary" data-curr="EUR" type="button">EUR</button>
+</div>
+</div>
+</div>
+<!-- 3 Experience Blocks -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- CARD 1: GROUP SURF LESSON -->
+<div class="flex flex-col bg-surface-card rounded border border-outline-light overflow-hidden transition-all duration-300 hover:border-primary/40 hover:shadow-lg">
+<div class="relative w-full h-72 overflow-hidden bg-sand">
+<img alt="Group surf lesson in whitewash at Kuta Beach" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WJL3pHJOil9c9Y_rOff5Ih3wWWFhHIB0HiNqLVDTvFiNAkJ7D97h7S5qOinZbvgkJSv8lf0Yjc0yLHRNTEX_VPtpGaaD7gF2fh2guPzEYy8-k7xfw08I7vvNiE0tjCchAAmun-Ubq4YUQ_BKKSIPzaf0ygUUP4Vb7_VrDjU1TrUJ7YQqMIBl9rSv0ievM8dob6BCHbICY6YBSKYWKRQrTRwRE_3_5V6_dx6G0a2kPKKgftS4WGVqPh9pU"/>
+<div class="absolute top-4 left-4 bg-primary/90 text-white text-[10px] uppercase font-medium tracking-[0.16em] px-3 py-1 rounded">
+                Small Group
+              </div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between space-y-6">
+<div class="space-y-4">
+<h3 class="font-serif text-2xl text-primary font-medium">GROUP SURF LESSON</h3>
+<div class="space-y-2 text-sm text-on-surface-variant border-y border-outline-light py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">groups</span>
+<span>One coach for 2–3 guests</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span>2 hours</span>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                  Supportive, safe ocean guidance with soft-top learner boards, UV rashguards, and dedicated Balinese surf coaching.
+                </p>
+</div>
+<div class="pt-4 border-t border-outline-light flex items-center justify-between">
+<div>
+<span class="text-[11px] uppercase tracking-wider text-on-surface-variant block font-inter">Total Rate</span>
+<div class="font-serif text-2xl font-semibold text-primary">
+<span class="price-val" data-base="150000">Rp 150,000</span>
+</div>
+<span class="price-approx text-xs text-on-surface-variant font-light">(~AUD $15 / $10 USD)</span>
+</div>
+<a class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white rounded text-xs uppercase tracking-[0.16em] font-medium hover:bg-primary-dark transition-colors" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf,%20I'd%20like%20to%20book%20a%20Group%20Surf%20Lesson!" rel="noopener noreferrer" target="_blank">
+                  Book Now
+                </a>
+</div>
+</div>
+</div>
+<!-- CARD 2: PRIVATE SURF LESSON -->
+<div class="flex flex-col bg-surface-card rounded border-2 border-primary/20 overflow-hidden shadow-sm transition-all duration-300 hover:border-primary hover:shadow-xl">
+<div class="relative w-full h-72 overflow-hidden bg-sand">
+<img alt="Private surf coach guidance at Kuta Beach wave face" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1W-XOpwL_vBGvLv0cAV8YmgYBlLSzKaaeMLl8DMffmusnI9bElDe_tHO6P09upXNc-VBgCVVY19qV5m2OgezSmXqHvi7OPa4ws9ZOKcWWYyPcQ4lxRELC-ix7u5csMAANV9uklM4w_FMuHau0Z6U0j0t5TzTZ66Q2CH8vhE701YI0mySCBxJy1bgo2tChhhEUS-8slHIfhhK7lJH6XmuzCXQ1WwELWEuUz_uVocEi_CfBN40IZmWNvifgs"/>
+<div class="absolute top-4 left-4 bg-secondary text-white text-[10px] uppercase font-medium tracking-[0.16em] px-3 py-1 rounded">
+                1-on-1 Focused
+              </div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between space-y-6">
+<div class="space-y-4">
+<h3 class="font-serif text-2xl text-primary font-medium">PRIVATE SURF LESSON</h3>
+<div class="space-y-2 text-sm text-on-surface-variant border-y border-outline-light py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">person</span>
+<span>One coach for one guest</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span>2 hours</span>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                  Dedicated personalized attention focused on fast progress, correct wave catching, board trim, and paddling mechanics.
+                </p>
+</div>
+<div class="pt-4 border-t border-outline-light flex items-center justify-between">
+<div>
+<span class="text-[11px] uppercase tracking-wider text-on-surface-variant block font-inter">Total Rate</span>
+<div class="font-serif text-2xl font-semibold text-primary">
+<span class="price-val" data-base="250000">Rp 250,000</span>
+</div>
+<span class="price-approx text-xs text-on-surface-variant font-light">(~AUD $25 / $16 USD)</span>
+</div>
+<a class="inline-flex items-center justify-center px-5 py-2.5 bg-secondary text-white rounded text-xs uppercase tracking-[0.16em] font-medium hover:bg-secondary-gold transition-colors shadow-sm" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf,%20I'd%20like%20to%20book%20a%20Private%20Surf%20Lesson!" rel="noopener noreferrer" target="_blank">
+                  Book Now
+                </a>
+</div>
+</div>
+</div>
+<!-- CARD 3: BOARD RENTAL -->
+<div class="flex flex-col bg-surface-card rounded border border-outline-light overflow-hidden transition-all duration-300 hover:border-primary/40 hover:shadow-lg">
+<div class="relative w-full h-72 overflow-hidden bg-sand">
+<img alt="Custom surfboards and longboards lined up on beach rack" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XvKaAXWQDEbX6k_AtwsCTyIlxMONqlnFF7hkwsq3g9zg8Ox0Q-qBYjxP44w6MxZ0Q2EH-0UfFHOohChnV7OfiKh7OSwE2sRsFp-9yDIqNWH2CjU90ajKK2Tic4wN8jihhWZuwSq4OG1Q9qFY6B33TmdvGNL4OFaxu9kPuVUbdPl-BMtTT5lt0WAeaMbtr3XXjvnPYtpOfumVwWFPOC1yCtI9JqFbw9MUW-Q9AHkruwiJiX9Te0dOpg3w"/>
+<div class="absolute top-4 left-4 bg-primary/90 text-white text-[10px] uppercase font-medium tracking-[0.16em] px-3 py-1 rounded">
+                Direct Sand Locker
+              </div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between space-y-6">
+<div class="space-y-4">
+<h3 class="font-serif text-2xl text-primary font-medium">BOARD RENTAL</h3>
+<div class="space-y-2 text-sm text-on-surface-variant border-y border-outline-light py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">surfing</span>
+<span>Premium soft-tops &amp; epoxy short/longboards</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span>1 hour</span>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                  Clean, well-waxed quiver ready directly on Kuta Beach. Switch boards anytime to match the tide changes throughout your session.
+                </p>
+</div>
+<div class="pt-4 border-t border-outline-light flex items-center justify-between">
+<div>
+<span class="text-[11px] uppercase tracking-wider text-on-surface-variant block font-inter">Hourly Rate</span>
+<div class="font-serif text-2xl font-semibold text-primary">
+<span class="price-val" data-base="50000">Rp 50,000</span>
+</div>
+<span class="price-approx text-xs text-on-surface-variant font-light">(~AUD $5 / $3.50 USD)</span>
+</div>
+<a class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white rounded text-xs uppercase tracking-[0.16em] font-medium hover:bg-primary-dark transition-colors" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf,%20I'd%20like%20to%20rent%20a%20board!" rel="noopener noreferrer" target="_blank">
+                  Book Now
+                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT / WHY MALU SECTION -->
+<section class="w-full py-24 bg-surface-low border-y border-outline-light" id="about">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Large Lifestyle Photography -->
+<div class="lg:col-span-6 order-2 lg:order-1">
+<div class="relative rounded overflow-hidden shadow-md">
+<img alt="Surfer walking along Kuta Beach at sunset holding board" class="w-full h-[480px] lg:h-[580px] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X1ESx6KBBhBBYyrbI7_XU31JEGL4S3r-eG5QhpHyyYFc5ku24K0DahlvkEMn2x4NOVSigRK1WuqiF4LzCV--qLZgU1aGLVNfOb_SrcfSCq5CYlft1_8dbQ64qblbXDRxqAa10YBCZvF17UIojoRzGtaCIvir0OH2NTh2lxkuxg4TNiVxYRsvuz9poowUNEh86H0AuS-is6f3WqAJXfPgHbU-CIyhCjpGj-ac-AyYjm1kwZkyhSYg-bnk4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<span class="text-[11px] uppercase tracking-[0.2em] font-medium text-amber-200">Kuta Beach Shoreline</span>
+<p class="font-serif text-lg italic mt-0.5">Golden hour over the tide line</p>
+</div>
+</div>
+</div>
+<!-- Editorial Split Content -->
+<div class="lg:col-span-6 order-1 lg:order-2 space-y-8">
+<div class="space-y-3">
+<span class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold block">About Malu Surf</span>
+<h2 class="font-serif text-3xl md:text-5xl text-primary tracking-tight leading-tight">
+                Your Bali Surf Experience Starts Here
+              </h2>
+<p class="text-base text-on-surface-variant font-light leading-relaxed">
+                A simple, friendly way to experience the waves of Kuta Beach.
+              </p>
+</div>
+<!-- Four Concise Benefits -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+<!-- Benefit 1 -->
+<div class="p-6 bg-surface-card rounded border border-outline-light space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">pin_drop</span>
+<h4 class="font-serif font-medium text-base text-primary">Kuta Beach Location</h4>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Right at the heart of Bali's surf scene.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="p-6 bg-surface-card rounded border border-outline-light space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">wb_sunny</span>
+<h4 class="font-serif font-medium text-base text-primary">Beginner-Friendly Lessons</h4>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Supportive and easy to follow.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="p-6 bg-surface-card rounded border border-outline-light space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">handshake</span>
+<h4 class="font-serif font-medium text-base text-primary">Private &amp; Small-Group Options</h4>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">More attention and a better experience.</p>
+</div>
+<!-- Benefit 4 -->
+<div class="p-6 bg-surface-card rounded border border-outline-light space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">chat</span>
+<h4 class="font-serif font-medium text-base text-primary">Easy WhatsApp Booking</h4>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Quick, simple and hassle-free.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EDITORIAL MASONRY GALLERY -->
+<section class="w-full py-24 bg-surface" id="gallery">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="mb-14 text-center max-w-2xl mx-auto space-y-2">
+<span class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold block">Visual Impressions</span>
+<h2 class="font-serif text-3xl md:text-5xl text-primary tracking-tight">Moments on Kuta Beach</h2>
+</div>
+<!-- Premium Asymmetric Masonry Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Span: Sunset -->
+<div class="group relative md:col-span-7 h-[420px] md:h-[500px] rounded overflow-hidden bg-sand">
+<img alt="Bali sunset walk with surfboard at Kuta beach" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1X1ESx6KBBhBBYyrbI7_XU31JEGL4S3r-eG5QhpHyyYFc5ku24K0DahlvkEMn2x4NOVSigRK1WuqiF4LzCV--qLZgU1aGLVNfOb_SrcfSCq5CYlft1_8dbQ64qblbXDRxqAa10YBCZvF17UIojoRzGtaCIvir0OH2NTh2lxkuxg4TNiVxYRsvuz9poowUNEh86H0AuS-is6f3WqAJXfPgHbU-CIyhCjpGj-ac-AyYjm1kwZkyhSYg-bnk4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-6 text-white">
+<span class="font-serif text-lg md:text-xl font-medium block">Bali Sunset</span>
+<span class="text-[11px] uppercase tracking-[0.18em] text-white/80">Kuta Beach Shoreline</span>
+</div>
+</div>
+<!-- Stacked Right Column: 2 Cards -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<!-- Top Right: Surf Lesson -->
+<div class="group relative h-[238px] rounded overflow-hidden bg-sand">
+<img alt="Surf lesson coaching in progress at Kuta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1WJL3pHJOil9c9Y_rOff5Ih3wWWFhHIB0HiNqLVDTvFiNAkJ7D97h7S5qOinZbvgkJSv8lf0Yjc0yLHRNTEX_VPtpGaaD7gF2fh2guPzEYy8-k7xfw08I7vvNiE0tjCchAAmun-Ubq4YUQ_BKKSIPzaf0ygUUP4Vb7_VrDjU1TrUJ7YQqMIBl9rSv0ievM8dob6BCHbICY6YBSKYWKRQrTRwRE_3_5V6_dx6G0a2kPKKgftS4WGVqPh9pU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-5 text-white">
+<span class="font-serif text-base font-medium block">Surf Lesson</span>
+<span class="text-[10px] uppercase tracking-[0.16em] text-white/80">Beginner Waves</span>
+</div>
+</div>
+<!-- Bottom Right: Board Rental Quiver -->
+<div class="group relative h-[238px] rounded overflow-hidden bg-sand">
+<img alt="Surfboard rack on beach sand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XvKaAXWQDEbX6k_AtwsCTyIlxMONqlnFF7hkwsq3g9zg8Ox0Q-qBYjxP44w6MxZ0Q2EH-0UfFHOohChnV7OfiKh7OSwE2sRsFp-9yDIqNWH2CjU90ajKK2Tic4wN8jihhWZuwSq4OG1Q9qFY6B33TmdvGNL4OFaxu9kPuVUbdPl-BMtTT5lt0WAeaMbtr3XXjvnPYtpOfumVwWFPOC1yCtI9JqFbw9MUW-Q9AHkruwiJiX9Te0dOpg3w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-5 text-white">
+<span class="font-serif text-base font-medium block">Kuta Beach</span>
+<span class="text-[10px] uppercase tracking-[0.16em] text-white/80">Quiver &amp; Sand Stand</span>
+</div>
+</div>
+</div>
+<!-- Bottom Full-Width Horizontal Feature: Clean Wave Riding -->
+<div class="group relative md:col-span-12 h-[340px] md:h-[420px] rounded overflow-hidden bg-sand">
+<img alt="Surfer carving turquoise wave in Kuta swell" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1W-XOpwL_vBGvLv0cAV8YmgYBlLSzKaaeMLl8DMffmusnI9bElDe_tHO6P09upXNc-VBgCVVY19qV5m2OgezSmXqHvi7OPa4ws9ZOKcWWYyPcQ4lxRELC-ix7u5csMAANV9uklM4w_FMuHau0Z6U0j0t5TzTZ66Q2CH8vhE701YI0mySCBxJy1bgo2tChhhEUS-8slHIfhhK7lJH6XmuzCXQ1WwELWEuUz_uVocEi_CfBN40IZmWNvifgs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-8 text-white">
+<span class="font-serif text-xl md:text-2xl font-medium block">Kuta Beach</span>
+<span class="text-xs uppercase tracking-[0.18em] text-white/80">Clean Indian Ocean Swell</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3-STEP BOOKING PROCESS -->
+<section class="w-full py-24 bg-surface-low border-y border-outline-light">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+<span class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold block">Simple Steps</span>
+<h2 class="font-serif text-3xl md:text-5xl text-primary tracking-tight">Ready to Ride?</h2>
+</div>
+<!-- 3 Horizontal Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<!-- Step 01 -->
+<div class="p-8 bg-surface-card rounded border border-outline-light space-y-4 relative">
+<div class="text-xs font-serif italic text-secondary tracking-widest uppercase font-semibold">01</div>
+<h3 class="font-serif text-xl text-primary font-medium">Choose your experience</h3>
+<p class="text-xs md:text-sm text-on-surface-variant leading-relaxed font-light">
+              Select between beginner small-group sessions, private 1-on-1 coaching, or surfboard rental.
+            </p>
+</div>
+<!-- Step 02 -->
+<div class="p-8 bg-surface-card rounded border border-outline-light space-y-4 relative">
+<div class="text-xs font-serif italic text-secondary tracking-widest uppercase font-semibold">02</div>
+<h3 class="font-serif text-xl text-primary font-medium">Message us on WhatsApp</h3>
+<p class="text-xs md:text-sm text-on-surface-variant leading-relaxed font-light">
+              Send us your dates and group size. We'll confirm the cleanest tide times and lock in your session.
+            </p>
+</div>
+<!-- Step 03 -->
+<div class="p-8 bg-surface-card rounded border border-outline-light space-y-4 relative">
+<div class="text-xs font-serif italic text-secondary tracking-widest uppercase font-semibold">03</div>
+<h3 class="font-serif text-xl text-primary font-medium">Meet us at Kuta Beach</h3>
+<p class="text-xs md:text-sm text-on-surface-variant leading-relaxed font-light">
+              Find our beachfront stand on the sand, get fitted with board and rashguard, and catch your waves.
+            </p>
+</div>
+</div>
+<!-- Strong WhatsApp Action Banner -->
+<div class="bg-primary text-white rounded p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="space-y-1.5 text-center md:text-left">
+<span class="text-[11px] uppercase tracking-[0.2em] text-emerald-400 font-semibold">Instant Inquiries</span>
+<h4 class="font-serif text-xl md:text-2xl font-medium">Book via WhatsApp: +62 812-3790-3715</h4>
+<p class="text-xs text-white/75 font-light">Direct response from our beach team. Pay on arrival.</p>
+</div>
+<a class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-white text-primary rounded text-xs uppercase font-semibold tracking-[0.16em] hover:bg-sand transition-all shadow-md shrink-0" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf%20Bali,%20I'd%20like%20to%20book%20a%20session." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-emerald-600">chat</span>
+<span>Book via WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- LOCATION SECTION -->
+<section class="w-full py-24 bg-surface" id="location">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="lg:col-span-5 space-y-8">
+<div class="space-y-3">
+<span class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold block">Find Malu Surf</span>
+<h2 class="font-serif text-3xl md:text-5xl text-primary tracking-tight">Kuta Beach, Bali</h2>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                Located right on the white sand along Jalan Pantai Kuta, conveniently accessible for morning high-tide sessions and sunset surfs.
+              </p>
+</div>
+<div class="p-6 bg-surface-low rounded border border-outline-light space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">location_on</span>
+<div>
+<h4 class="text-xs uppercase tracking-wider font-semibold text-primary">Beach Address</h4>
+<p class="text-sm text-on-surface mt-1 leading-relaxed">
+                    Jl. Pantai Kuta, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361
+                  </p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded text-xs uppercase tracking-[0.16em] font-medium hover:bg-primary-dark transition-colors" href="https://maps.google.com/?q=Kuta+Beach+Bali" rel="noopener noreferrer" target="_blank">
+<span>Get Directions</span>
+<span class="material-symbols-outlined text-[15px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3 bg-surface-card border border-outline-light text-primary rounded text-xs uppercase tracking-[0.16em] font-medium hover:bg-surface-low transition-colors" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf,%20can%20you%20send%20me%20your%20exact%20pin%20drop%20location?" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[17px] text-emerald-600">chat</span>
+<span>Book via WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Visual Map Area -->
+<div class="lg:col-span-7">
+<div class="relative w-full h-[420px] rounded overflow-hidden border border-outline-light bg-sand shadow-sm">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiLRQsqPdmEqNXGEd6GCnBg7ToLlPmsn62iH9MmHq4uQQymHrNcJ5qzDq_zdGtl3V5P-r0TVrFkmBNKRQgtrt0f0c63OijXZmtzbxegLBqQO9vmAnHIW-addFEcFDmmcriNtfH89ZhLu6i54n2uZb6WcTZBULUBvq23XbMvgyH0NVcLHCJgyNz7V91aHSKPb6n0IxiKxpyj-7ywx3vr7aB9IG9jbkTI7XKpZkbcreoRf-ljddLPHLa')"></div>
+<div class="absolute bottom-5 left-5 right-5 p-4 rounded bg-white/95 backdrop-blur-md border border-outline-light flex items-center justify-between shadow-sm">
+<div>
+<div class="font-serif text-sm font-semibold text-primary">Malu Surf Bali — Beach Stand</div>
+<div class="text-xs text-on-surface-variant">Jl. Pantai Kuta · Direct Ocean Access</div>
+</div>
+<a class="text-xs font-semibold uppercase tracking-wider text-secondary hover:underline flex items-center gap-1" href="https://maps.google.com/?q=Kuta+Beach+Bali" rel="noopener noreferrer" target="_blank">
+<span>Open Map</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL INSPIRATIONAL CTA -->
+<section class="relative w-full py-32 overflow-hidden bg-primary">
+<div class="absolute inset-0 w-full h-full">
+<img alt="Sunset surfing at Kuta Beach Bali" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1X1ESx6KBBhBBYyrbI7_XU31JEGL4S3r-eG5QhpHyyYFc5ku24K0DahlvkEMn2x4NOVSigRK1WuqiF4LzCV--qLZgU1aGLVNfOb_SrcfSCq5CYlft1_8dbQ64qblbXDRxqAa10YBCZvF17UIojoRzGtaCIvir0OH2NTh2lxkuxg4TNiVxYRsvuz9poowUNEh86H0AuS-is6f3WqAJXfPgHbU-CIyhCjpGj-ac-AyYjm1kwZkyhSYg-bnk4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary/75 to-primary-dark/60"></div>
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 text-center flex flex-col items-center">
+<span class="text-xs uppercase tracking-[0.22em] text-amber-200 mb-4 font-medium">Start Here</span>
+<h2 class="font-serif text-4xl sm:text-6xl text-white max-w-2xl leading-tight mb-4 font-normal">
+          Your First Wave in Bali Awaits
+        </h2>
+<p class="text-base text-white/85 max-w-lg mb-10 leading-relaxed font-light">
+          Join Malu Surf Bali at Kuta Beach.
+        </p>
+<a class="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-primary rounded text-xs uppercase font-semibold tracking-[0.16em] hover:bg-sand transition-all shadow-xl" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf,%20I'm%20ready%20to%20book%20my%20surf%20lesson!" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Book Your Surf Lesson</span>
+</a>
+</div>
+</section>
+</main>
+<!-- FLOATING MOBILE STICKY WHATSAPP BAR -->
+<div class="fixed bottom-4 left-4 right-4 z-40 sm:hidden">
+<a class="flex items-center justify-between w-full bg-primary-dark text-white px-5 py-3.5 rounded shadow-2xl border border-white/20 active:scale-[0.98] transition-all" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf%20Bali,%20I'd%20like%20to%20inquire%20about%20surf%20lessons." rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-400 text-[20px]">chat</span>
+<span class="text-xs font-semibold tracking-wider uppercase">Book on WhatsApp</span>
+</div>
+<span class="text-xs text-white/80 font-light">+62 812-3790-3715</span>
+</a>
+</div>
+<!-- DESKTOP FLOATING WHATSAPP PILL -->
+<aside class="fixed bottom-6 right-6 z-40 hidden sm:block">
+<a class="flex items-center gap-3 bg-primary-dark/95 text-white px-5 py-3 rounded border border-white/15 shadow-xl hover:bg-primary transition-all duration-200 group" href="https://wa.me/6281237903715?text=Hi%20Malu%20Surf%20Bali,%20I'd%20like%20to%20book%20a%20lesson." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-emerald-400">chat</span>
+<div class="flex flex-col text-left">
+<span class="text-[10px] uppercase tracking-widest text-white/70">WhatsApp</span>
+<span class="text-xs font-medium text-white tracking-wider">+62 812-3790-3715</span>
+</div>
+</a>
+</aside>
+<!-- DARK PREMIUM FOOTER -->
+<footer class="w-full bg-primary-dark text-white border-t border-white/10">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+<!-- Brand / Identity -->
+<div class="lg:col-span-5 space-y-4">
+<span class="font-serif text-xl tracking-[0.22em] text-white uppercase block font-medium">MALU SURF BALI</span>
+<p class="text-xs text-white/70 max-w-sm leading-relaxed font-light">
+            Surf lessons and board rentals at Kuta Beach, Bali, Indonesia. Warm ocean coaches, forgiving waves, and personal guidance.
+          </p>
+<div class="text-xs text-white/60">
+            Kuta Beach, Bali, Indonesia
+          </div>
+</div>
+<!-- Quick Links -->
+<div class="lg:col-span-3 space-y-3">
+<span class="text-xs uppercase tracking-[0.18em] text-white/50 block font-medium">Quick Links</span>
+<nav class="flex flex-col space-y-2 text-xs text-white/80">
+<a class="hover:text-white transition-colors" href="#experiences">Experiences</a>
+<a class="hover:text-white transition-colors" href="#about">About</a>
+<a class="hover:text-white transition-colors" href="#gallery">Gallery</a>
+<a class="hover:text-white transition-colors" href="#location">Location</a>
+</nav>
+</div>
+<!-- Connect & Maps -->
+<div class="lg:col-span-4 space-y-3">
+<span class="text-xs uppercase tracking-[0.18em] text-white/50 block font-medium">Contact &amp; Location</span>
+<div class="space-y-2 text-xs text-white/80">
+<p>
+              WhatsApp: <a class="text-white hover:underline underline-offset-4" href="https://wa.me/6281237903715" rel="noopener noreferrer" target="_blank">+62 812-3790-3715</a>
+</p>
+<p>
+<a class="hover:text-white inline-flex items-center gap-1 transition-colors" href="https://maps.google.com/?q=Kuta+Beach+Bali" rel="noopener noreferrer" target="_blank">
+<span>Google Maps Location</span>
+<span class="material-symbols-outlined text-[13px]">north_east</span>
+</a>
+</p>
+<p>
+<a class="hover:text-white inline-flex items-center gap-1 transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span>Instagram</span>
+<span class="material-symbols-outlined text-[13px]">north_east</span>
+</a>
+</p>
+</div>
+</div>
+</div>
+<div class="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-white/50">
+<div>© 2025 MALU SURF BALI. All rights reserved.</div>
+<div class="flex items-center gap-6">
+<span>Kuta Beach, Bali</span>
+<span>Safety First</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Currency Conversion Script -->
+<script>
+    (function() {
+      const rates = {
+        IDR: { rate: 1, symbol: 'Rp ', approx: { 150000: '(~AUD $15 / $10 USD)', 250000: '(~AUD $25 / $16 USD)', 50000: '(~AUD $5 / $3.50 USD)' } },
+        AUD: { rate: 0.00010, symbol: 'AUD $', approxSuffix: 'AUD' },
+        USD: { rate: 0.000064, symbol: 'USD $', approxSuffix: 'USD' },
+        EUR: { rate: 0.000059, symbol: 'EUR €', approxSuffix: 'EUR' }
+      };
+
+      const buttons = document.querySelectorAll('.curr-btn');
+      const priceEls = document.querySelectorAll('.price-val');
+      const approxEls = document.querySelectorAll('.price-approx');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const curr = this.getAttribute('data-curr');
+
+          buttons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-white');
+            b.classList.add('text-on-surface-variant');
+          });
+          this.classList.add('bg-primary', 'text-white');
+          this.classList.remove('text-on-surface-variant');
+
+          priceEls.forEach((el, index) => {
+            const base = parseInt(el.getAttribute('data-base'), 10);
+            if (curr === 'IDR') {
+              el.textContent = 'Rp ' + base.toLocaleString('id-ID');
+              if (approxEls[index] && rates.IDR.approx[base]) {
+                approxEls[index].textContent = rates.IDR.approx[base];
+              }
+            } else {
+              const converted = Math.round(base * rates[curr].rate);
+              el.textContent = rates[curr].symbol + converted;
+              if (approxEls[index]) {
+                approxEls[index].textContent = '(IDR ' + (base / 1000) + 'k)';
+              }
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</body></html>
