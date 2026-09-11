@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background Image with Radiant Sunset Ocean Atmosphere */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/images/hero-barrel.png"
+          src="/images/hero-barrel.webp"
           alt="Surfer catching wave at Legian Beach Bali"
           fill
           priority

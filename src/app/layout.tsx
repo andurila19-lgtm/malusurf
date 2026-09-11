@@ -1,16 +1,38 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { BookingModalProvider } from "@/context/BookingModalContext";
 import BookingModal from "@/components/BookingModal";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-serif",
+  weight: ["400", "500", "600", "700"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Malu Surf Bali | Surf Lessons & Board Rental at Legian Beach",
   description:
     "Learn to surf in Bali with Malu Surf Bali at Legian & Kuta Beach. Group & private lessons with free surf photos & videos. Book easily via WhatsApp.",
   icons: {
-    icon: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/logo.webp",
+    apple: "/images/logo.webp",
   },
   keywords: [
     "Malu Surf Bali",
@@ -27,14 +49,14 @@ export const metadata: Metadata = {
     title: "Malu Surf Bali | Surf Lessons & Board Rental at Legian Beach",
     description:
       "Learn to surf in Bali with Malu Surf Bali at Legian & Kuta Beach. Group & private lessons with free surf photos & videos. Book easily via WhatsApp.",
-    url: "https://sites.google.com/view/malusurfbali/home",
+    url: "https://malusurf.vercel.app",
     siteName: "Malu Surf Bali",
     images: [
       {
-        url: "/images/logo.png",
-        width: 800,
-        height: 800,
-        alt: "Malu Surf Bali Official Logo",
+        url: "/images/hero-barrel.webp",
+        width: 1200,
+        height: 630,
+        alt: "Malu Surf Bali Surf Lessons Legian Beach",
       },
     ],
     locale: "en_US",
@@ -45,9 +67,12 @@ export const metadata: Metadata = {
     title: "Malu Surf Bali | Surf Lessons & Board Rental at Legian Beach",
     description:
       "Learn to surf in Bali with Malu Surf Bali at Legian & Kuta Beach. Book group or private surf lessons directly via WhatsApp.",
-    images: ["/images/logo.png"],
+    images: ["/images/hero-barrel.webp"],
   },
-  metadataBase: new URL("https://sites.google.com/view/malusurfbali/home"),
+  metadataBase: new URL("https://malusurf.vercel.app"),
+  alternates: {
+    canonical: "https://malusurf.vercel.app",
+  },
 };
 
 export default function RootLayout({
@@ -60,8 +85,8 @@ export default function RootLayout({
     "@type": "SportsActivityLocation",
     name: "Malu Surf Bali",
     description:
-      "Surf lessons and board rentals right on the white sands of Legian Beach, Bali, Indonesia.",
-    url: "https://sites.google.com/view/malusurfbali/home",
+      "Surf lessons and board rentals right on the white sands of Legian Beach, Bali, Indonesia. Free surf photography included with every lesson.",
+    url: "https://malusurf.vercel.app",
     telephone: "+62 812-3790-3715",
     address: {
       "@type": "PostalAddress",
@@ -85,21 +110,13 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html
+      lang="en"
+      className={`scroll-smooth ${plusJakartaSans.variable} ${playfairDisplay.variable} ${inter.variable}`}
+    >
       <head>
-        <link rel="icon" href="/images/logo.png" type="image/png" sizes="any" />
-        <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="icon" href="/images/logo.webp" type="image/webp" />
+        <link rel="apple-touch-icon" href="/images/logo.webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
@@ -116,4 +133,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 

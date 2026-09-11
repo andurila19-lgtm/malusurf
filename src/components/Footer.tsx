@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative w-12 h-12 rounded-full overflow-hidden bg-white shadow-sm border border-white/20 shrink-0">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.webp"
                   alt="Malu Surf Bali Logo"
                   fill
                   sizes="48px"

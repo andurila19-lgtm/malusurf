@@ -10,18 +10,18 @@
   --color-surface-container-high: #E5DFC0;
   --color-primary: #142850;
   --color-primary-dark: #0A1931;
-  --color-secondary: #E5A212;
-  --color-secondary-gold: #D48D08;
+  --color-secondary: #B47306;
+  --color-secondary-gold: #9E6303;
   --color-secondary-container: #FEF3C7;
-  --color-on-surface: #121E2F;
-  --color-on-surface-variant: #4A5568;
+  --color-on-surface: #0F172A;
+  --color-on-surface-variant: #334155;
   --color-outline-light: #E2DBD0;
   --color-sand: #F7EFE2;
-  --color-tertiary: #00818A;
+  --color-tertiary: #006D75;
 
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-  --font-inter: "Inter", sans-serif;
+  --font-serif: var(--font-serif), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-inter: var(--font-inter), "Inter", sans-serif;
 }
 
 @layer base {
@@ -29,8 +29,8 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #FBF9F6;
-    color: #1B1C1A;
+    background-color: #FBF9F5;
+    color: #0F172A;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -14,7 +14,7 @@ export default function FinalCTA() {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/images/sunset-walk.png"
+          src="/images/sunset-walk.webp"
           alt="Sunset surfing at Legian Beach Bali"
           fill
           sizes="100vw"

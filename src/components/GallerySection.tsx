@@ -34,7 +34,7 @@ export default function GallerySection() {
             className="group relative md:col-span-7 h-[380px] md:h-[460px] rounded-lg overflow-hidden bg-sand shadow-xs"
           >
             <Image
-              src="/images/sunset-walk.png"
+              src="/images/sunset-walk.webp"
               alt="Bali sunset walk with surfboard at Legian beach"
               fill
               sizes="(max-width: 768px) 100vw, 60vw"
@@ -62,7 +62,7 @@ export default function GallerySection() {
               className="group relative h-[218px] rounded-lg overflow-hidden bg-sand shadow-xs"
             >
               <Image
-                src="/images/surf-coach.png"
+                src="/images/surf-coach.webp"
                 alt="Surf lesson coaching in progress at Legian"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -88,7 +88,7 @@ export default function GallerySection() {
               className="group relative h-[218px] rounded-lg overflow-hidden bg-sand shadow-xs"
             >
               <Image
-                src="/images/board-quiver.png"
+                src="/images/board-quiver.webp"
                 alt="Surfboard rack on beach sand"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -115,7 +115,7 @@ export default function GallerySection() {
             className="group relative md:col-span-12 h-[300px] md:h-[380px] rounded-lg overflow-hidden bg-sand shadow-xs"
           >
             <Image
-              src="/images/hero-barrel.png"
+              src="/images/hero-barrel.webp"
               alt="Surfer carving turquoise wave in Bali swell"
               fill
               sizes="100vw"

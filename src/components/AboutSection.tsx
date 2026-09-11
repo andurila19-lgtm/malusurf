@@ -32,7 +32,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-sm bg-sand h-[460px] lg:h-[540px]">
               <Image
-                src="/images/sunset-walk.png"
+                src="/images/sunset-walk.webp"
                 alt="Surfer walking along Legian Beach at sunset holding surfboard"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
