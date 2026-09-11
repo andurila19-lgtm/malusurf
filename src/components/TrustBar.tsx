@@ -1,7 +1,12 @@
+"use client";
+
 import { Star, MapPin } from "lucide-react";
 import { BUSINESS_INFO } from "@/lib/data";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function TrustBar() {
+  const { dict } = useLanguage();
+
   return (
     <section className="w-full bg-surface-low border-b border-outline-light py-5">
       <div className="w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 flex flex-wrap items-center justify-center md:justify-between gap-6 text-sm">
@@ -9,7 +14,7 @@ export default function TrustBar() {
         <div className="flex items-center gap-3">
           <div className="flex items-center text-amber-500 gap-1">
             <span className="font-serif font-semibold text-primary text-base mr-1">
-              {BUSINESS_INFO.rating}
+              {dict.trustBar.rating}
             </span>
             {[...Array(5)].map((_, i) => (
               <Star
@@ -19,7 +24,7 @@ export default function TrustBar() {
             ))}
           </div>
           <span className="text-on-surface-variant text-xs md:text-sm font-medium">
-            {BUSINESS_INFO.reviewsCount} Google Reviews
+            {dict.trustBar.reviews}
           </span>
         </div>
 
@@ -29,7 +34,7 @@ export default function TrustBar() {
         {/* Location */}
         <div className="flex items-center gap-2 text-on-surface-variant text-xs md:text-sm">
           <MapPin className="w-4 h-4 text-primary" />
-          <span className="font-medium">{BUSINESS_INFO.locationName}</span>
+          <span className="font-medium">{dict.trustBar.location}</span>
         </div>
 
         {/* Divider */}
@@ -37,7 +42,7 @@ export default function TrustBar() {
 
         {/* Traveler Trust Quote */}
         <div className="text-on-surface-variant text-xs md:text-sm font-light tracking-wide italic">
-          &ldquo;Trusted by travelers visiting Bali.&rdquo;
+          {dict.trustBar.quote}
         </div>
       </div>
     </section>

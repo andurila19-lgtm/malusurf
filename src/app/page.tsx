@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import ExperiencesSection from "@/components/ExperiencesSection";
 import AboutSection from "@/components/AboutSection";
+import ReviewsSection from "@/components/ReviewsSection";
 import GallerySection from "@/components/GallerySection";
 import BookingProcess from "@/components/BookingProcess";
 import LocationSection from "@/components/LocationSection";
@@ -27,23 +28,26 @@ export default function Home() {
         {/* 4. Editorial "Your Bali Surf Experience Starts Here" section */}
         <AboutSection />
 
-        {/* 5. Surf photography gallery */}
+        {/* 5. Authentic guest reviews */}
+        <ReviewsSection />
+
+        {/* 6. Surf photography gallery */}
         <GallerySection />
 
-        {/* 6. 3-step booking process */}
+        {/* 7. 3-step booking process */}
         <BookingProcess />
 
-        {/* 7. Location section */}
+        {/* 8. Location section */}
         <LocationSection />
 
-        {/* 8. Full-width final CTA */}
+        {/* 9. Full-width final CTA */}
         <FinalCTA />
       </main>
 
-      {/* 9. Premium footer */}
+      {/* 10. Premium footer */}
       <Footer />
 
-      {/* 10. Sticky / Floating WhatsApp CTAs */}
+      {/* 11. Sticky / Floating WhatsApp CTAs */}
       <WhatsAppButtons />
     </>
   );

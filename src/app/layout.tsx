@@ -1,32 +1,40 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
+import { BookingModalProvider } from "@/context/BookingModalContext";
+import BookingModal from "@/components/BookingModal";
 
 export const metadata: Metadata = {
-  title: "Malu Surf Bali | Surf Lessons & Board Rental in Kuta Beach",
+  title: "Malu Surf Bali | Surf Lessons & Board Rental at Legian Beach",
   description:
-    "Learn to surf in Bali with Malu Surf Bali at Kuta Beach. Book group or private surf lessons and rent surfboards directly via WhatsApp.",
+    "Learn to surf in Bali with Malu Surf Bali at Legian & Kuta Beach. Group & private lessons with free surf photos & videos. Book easily via WhatsApp.",
+  icons: {
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
   keywords: [
     "Malu Surf Bali",
+    "Legian Beach surf lessons",
     "Kuta Beach surf lessons",
     "surf school Bali",
-    "board rental Kuta",
+    "board rental Legian",
     "private surf lesson Bali",
-    "beginner surf lessons Bali",
-    "surf coach Kuta Beach",
+    "intermediate surf coaching Bali",
+    "surf coach Bali",
   ],
   authors: [{ name: "Malu Surf Bali" }],
   openGraph: {
-    title: "Malu Surf Bali | Surf Lessons & Board Rental in Kuta Beach",
+    title: "Malu Surf Bali | Surf Lessons & Board Rental at Legian Beach",
     description:
-      "Learn to surf in Bali with Malu Surf Bali at Kuta Beach. Book group or private surf lessons and rent surfboards directly via WhatsApp.",
+      "Learn to surf in Bali with Malu Surf Bali at Legian & Kuta Beach. Group & private lessons with free surf photos & videos. Book easily via WhatsApp.",
     url: "https://sites.google.com/view/malusurfbali/home",
     siteName: "Malu Surf Bali",
     images: [
       {
-        url: "/images/hero-barrel.png",
-        width: 1200,
-        height: 630,
-        alt: "Malu Surf Bali - Surf Lessons & Board Rental at Kuta Beach",
+        url: "/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Malu Surf Bali Official Logo",
       },
     ],
     locale: "en_US",
@@ -34,10 +42,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Malu Surf Bali | Surf Lessons & Board Rental in Kuta Beach",
+    title: "Malu Surf Bali | Surf Lessons & Board Rental at Legian Beach",
     description:
-      "Learn to surf in Bali with Malu Surf Bali at Kuta Beach. Book group or private surf lessons directly via WhatsApp.",
-    images: ["/images/hero-barrel.png"],
+      "Learn to surf in Bali with Malu Surf Bali at Legian & Kuta Beach. Book group or private surf lessons directly via WhatsApp.",
+    images: ["/images/logo.png"],
   },
   metadataBase: new URL("https://sites.google.com/view/malusurfbali/home"),
 };
@@ -52,12 +60,12 @@ export default function RootLayout({
     "@type": "SportsActivityLocation",
     name: "Malu Surf Bali",
     description:
-      "Surf lessons and board rentals right on the white sands of Kuta Beach, Bali, Indonesia.",
+      "Surf lessons and board rentals right on the white sands of Legian Beach, Bali, Indonesia.",
     url: "https://sites.google.com/view/malusurfbali/home",
     telephone: "+62 812-3790-3715",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Jl. Pantai Kuta",
+      streetAddress: "Jl. Pantai Legian",
       addressLocality: "Legian, Kec. Kuta",
       addressRegion: "Kabupaten Badung, Bali",
       postalCode: "80361",
@@ -95,8 +103,14 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-surface text-on-surface antialiased font-sans selection:bg-secondary-container selection:text-primary min-h-screen flex flex-col">
-        {children}
+        <LanguageProvider>
+          <BookingModalProvider>
+            {children}
+            <BookingModal />
+          </BookingModalProvider>
+        </LanguageProvider>
       </body>
     </html>
   );
 }
+

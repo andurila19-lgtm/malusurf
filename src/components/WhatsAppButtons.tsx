@@ -2,16 +2,22 @@
 
 import { MessageCircle } from "lucide-react";
 import { BUSINESS_INFO, getWhatsAppLink } from "@/lib/data";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function WhatsAppButtons() {
+  const { language } = useLanguage();
+
+  const defaultMsg =
+    language === "id"
+      ? "Halo Malu Surf Bali, saya mau booking sesi surfing di Pantai Legian!"
+      : "Hi Malu Surf Bali, I'd like to book a surf session at Legian Beach!";
+
   return (
     <>
       {/* MOBILE COMPACT FLOATING WHATSAPP BUTTON */}
       <div className="fixed bottom-4 right-4 z-40 sm:hidden">
         <a
-          href={getWhatsAppLink(
-            "Hi Malu Surf Bali, I'd like to inquire about surf lessons."
-          )}
+          href={getWhatsAppLink(defaultMsg)}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-primary-dark/95 text-white px-3.5 py-2 rounded-full shadow-lg border border-white/20 transition-colors"
@@ -27,9 +33,7 @@ export default function WhatsAppButtons() {
       {/* DESKTOP COMPACT FLOATING WHATSAPP PILL */}
       <aside className="fixed bottom-5 right-5 z-40 hidden sm:block">
         <a
-          href={getWhatsAppLink(
-            "Hi Malu Surf Bali, I'd like to book a session."
-          )}
+          href={getWhatsAppLink(defaultMsg)}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2.5 bg-primary-dark/95 text-white px-3.5 py-2 rounded-full border border-white/15 shadow-md hover:bg-primary transition-colors group"
@@ -47,3 +51,4 @@ export default function WhatsAppButtons() {
     </>
   );
 }
+

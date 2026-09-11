@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-surface: #FBF9F6;
-  --color-surface-low: #F7F4EE;
+  --color-surface: #FBF9F5;
+  --color-surface-low: #F6F2EA;
   --color-surface-card: #FFFFFF;
-  --color-surface-dim: #EAE3D2;
-  --color-surface-container: #EFEEEB;
-  --color-surface-container-low: #F5F3F0;
-  --color-surface-container-high: #EAE8E5;
-  --color-primary: #0E2439;
-  --color-primary-dark: #081624;
-  --color-secondary: #805521;
-  --color-secondary-gold: #C69249;
-  --color-secondary-container: #F5E7D3;
-  --color-on-surface: #1B1C1A;
-  --color-on-surface-variant: #505459;
-  --color-outline-light: #E2DED5;
-  --color-sand: #F3EFE6;
-  --color-tertiary: #14B8A6;
+  --color-surface-dim: #EFE9DC;
+  --color-surface-container: #ECE6D8;
+  --color-surface-container-low: #F5F1E8;
+  --color-surface-container-high: #E5DFC0;
+  --color-primary: #142850;
+  --color-primary-dark: #0A1931;
+  --color-secondary: #E5A212;
+  --color-secondary-gold: #D48D08;
+  --color-secondary-container: #FEF3C7;
+  --color-on-surface: #121E2F;
+  --color-on-surface-variant: #4A5568;
+  --color-outline-light: #E2DBD0;
+  --color-sand: #F7EFE2;
+  --color-tertiary: #00818A;
 
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
